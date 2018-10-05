@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fdede05-130f-4f54-858c-8de3443768c2" name="Default Changelist" comment="" />
+    <list default="true" id="2fdede05-130f-4f54-858c-8de3443768c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw/preguntas.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AddNoCorrectAnswer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PruebaCompleta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/preprocess/ProtoPregunta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/preprocess/ProtoPrueba.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/preprocess/ProtoRespuesta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Tests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PruebasGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PruebasGenerator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tests.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <executablePath>composer</executablePath>
   </component>
@@ -16,39 +32,46 @@
     <session id="1377467728">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="2" />
-          <entry key="php" value="4" />
+          <entry key="json" value="5" />
+          <entry key="lock" value="2" />
+          <entry key="php" value="16" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="2" />
-          <entry key="PHP" value="4" />
+          <entry key="JSON" value="7" />
+          <entry key="PHP" value="16" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="42" />
-          <entry key="php" value="220" />
+          <entry key="dummy" value="1" />
+          <entry key="json" value="62" />
+          <entry key="php" value="1458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="42" />
-          <entry key="PHP" value="220" />
+          <entry key="JSON" value="62" />
+          <entry key="PHP" value="1458" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions">
         <counts>
           <entry key="addDependencyDialog_from_ComposerEditorNotificationPanel.ExtraActions" value="1" />
           <entry key="install_from_ComposerEditorNotificationPanel" value="3" />
-          <entry key="updateAll_from_ComposerEditorNotificationPanel" value="5" />
+          <entry key="updateAll_from_ComposerEditorNotificationPanel" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test" />
@@ -58,18 +81,87 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="2" />
+          <entry key="PHP Class.type" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#36#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Tests.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#7#38#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/league/pipeline/src/Pipeline.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AddNoCorrectAnswer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/preprocess/ProtoPrueba.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/preprocess/ProtoPregunta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/preprocess/ProtoRespuesta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -85,10 +177,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/AddNoCorrectAnswer.php" />
-        <option value="$PROJECT_DIR$/src/Main.php" />
         <option value="$PROJECT_DIR$/src/PruebaCompleta.php" />
+        <option value="$PROJECT_DIR$/src/preprocess/ProtoPregunta.php" />
+        <option value="$PROJECT_DIR$/src/preprocess/ProtoRespuesta.php" />
+        <option value="$PROJECT_DIR$/src/preprocess/ProtoPrueba.php" />
+        <option value="$PROJECT_DIR$/src/AddNoCorrectAnswer.php" />
+        <option value="$PROJECT_DIR$/tests/tests.php" />
+        <option value="$PROJECT_DIR$/tests/Tests.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/index.php" />
+        <option value="$PROJECT_DIR$/src/Main.php" />
       </list>
     </option>
   </component>
@@ -148,10 +246,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1360" />
-    <option name="y" value="-4" />
-    <option name="width" value="1360" />
-    <option name="height" value="772" />
+    <option name="x" value="-1361" />
+    <option name="y" value="-11" />
+    <option name="width" value="1362" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -168,7 +266,18 @@
             <path>
               <item name="PruebasGenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="PruebasGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="raw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PruebasGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PruebasGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PruebasGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PruebasGenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="preprocess" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PruebasGenerator" type="b2602c69:ProjectViewProjectNode" />
@@ -201,10 +310,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.Tests.testMain">
+    <configuration name="Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests" file="$PROJECT_DIR$/tests/Tests.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests.testMain" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests" file="$PROJECT_DIR$/tests/Tests.php" method="testMain" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/src/Main.php">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHP Script.Main" />
+      <item itemvalue="PHPUnit.Tests" />
+      <item itemvalue="PHPUnit.Tests.testMain" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.Tests.testMain" />
+        <item itemvalue="PHPUnit.Tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -217,18 +345,50 @@
       <option name="presentableId" value="Default" />
       <updated>1538606174239</updated>
       <workItem from="1538606179202" duration="4256000" />
+      <workItem from="1538694625426" duration="1792000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Tests - 2018.10.03 at 23h 34m 00s.xml">
+      <configuration name="Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests - 2018.10.03 at 23h 35m 09s.xml">
+      <configuration name="Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests - 2018.10.04 at 21h 48m 22s.xml">
+      <configuration name="Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests - 2018.10.04 at 21h 49m 34s.xml">
+      <configuration name="Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_testMain - 2018.10.04 at 21h 49m 36s.xml">
+      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_testMain - 2018.10.04 at 21h 49m 46s.xml">
+      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_testMain - 2018.10.04 at 21h 50m 05s.xml">
+      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_testMain - 2018.10.04 at 21h 50m 57s.xml">
+      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_testMain - 2018.10.04 at 21h 51m 10s.xml">
+      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_testMain - 2018.10.04 at 21h 53m 38s.xml">
+      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4307000" />
+    <option name="totallyTimeSpent" value="8861000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1360" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1361" y="-11" width="1362" height="780" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15367647" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15367647" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -237,7 +397,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32935917" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32935917" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -256,19 +416,88 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Main.php" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/src/PruebaCompleta.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raw/preguntas.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="469">
+          <caret line="342" column="38" selection-start-line="342" selection-start-column="38" selection-end-line="342" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddNoCorrectAnswer.php" />
-    <entry file="file://$PROJECT_DIR$/src/PruebaCompleta.php" />
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddNoCorrectAnswer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/preprocess/ProtoPrueba.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/preprocess/ProtoPregunta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/preprocess/ProtoRespuesta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/league/pipeline/src/Pipeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#36#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
