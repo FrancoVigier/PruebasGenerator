@@ -9,6 +9,7 @@
         "php-coveralls/php-coveralls": "^1.0"
     },
     "autoload": {
+        "files": ["src/Main.php"],
         "psr-4": {
             "PruebasGenerator\\": "src"
         }
