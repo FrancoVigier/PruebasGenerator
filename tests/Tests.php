@@ -5,6 +5,6 @@ use function PruebasGenerator\main;
 
 class Tests extends TestCase {
 	public function testMain() {
-		main();
+		main(3);
 	}
 }

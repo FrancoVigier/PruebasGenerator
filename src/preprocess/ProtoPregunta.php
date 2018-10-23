@@ -20,4 +20,10 @@ class ProtoPregunta {
 		$this->HAS_SPECIAL_ALL = $hasSpecialAll;
 		$this->HAS_SPECIAL_NO_CORRECT = $hasSpecialNoCorrect;
 	}
+
+	function __clone() {
+		$this->RESPUESTAS = array_map(function ($elem) {
+			return clone $elem;
+		}, $this->RESPUESTAS);
+	}
 }

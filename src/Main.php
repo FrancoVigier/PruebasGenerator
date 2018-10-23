@@ -9,7 +9,7 @@ use Symfony\Component\Yaml\Exception\ParseException;
 use League\Pipeline\Pipeline;
 use Symfony\Component\Yaml\Yaml;
 
-function main() {
+function main(int $numberTemas) {
 	$ymlFile = "../raw/preguntas.yml";
 
 	try {
@@ -17,6 +17,8 @@ function main() {
 	} catch (ParseException $exception) {
 		die("Error en parseo de yml: ".$exception->getTraceAsString());
 	}
+
+	$temas = generateTemas($numberTemas, $protoPrueba);
 }
 
 function processRawText(string $textFilePath): ProtoPrueba /*throws ParseException*/ {
@@ -81,4 +83,26 @@ function processRespuestas(array $correctRespuestasRaw, array $wrongRespuestasRa
 			return $respuestas;
 		})
 		->process(array($correctRespuestasRaw, $wrongRespuestasRaw));
+}
+
+function generateTemas(int $numberTemas, ProtoPrueba $protoPrueba): array {
+	$temas = [];
+
+	for($i = 0; $i < $numberTemas; $i++) {
+		$temas[] = (new Pipeline)
+			->pipe(function (ProtoPrueba $protoPrueba) {
+				shuffle($protoPrueba->PREGUNTAS);
+				return $protoPrueba;
+			})
+			->pipe(function (ProtoPrueba $protoPrueba) {
+				/* @var $pregunta ProtoPregunta */
+				foreach ($protoPrueba->PREGUNTAS as $pregunta) {
+					shuffle($pregunta->RESPUESTAS);
+				}
+				return $protoPrueba;
+			})
+			->process(clone $protoPrueba);
+	}
+
+	return $temas;
 }
