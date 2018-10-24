@@ -10,7 +10,9 @@ use League\Pipeline\Pipeline;
 use Symfony\Component\Yaml\Yaml;
 
 function main(int $numberTemas) {
-	$ymlFile = "../raw/preguntas.yml";
+	$twigTemplate = new TwigTemplateLoader();
+
+	$ymlFile = "raw/preguntas.yml";
 
 	try {
 		$protoPrueba = processRawText($ymlFile);
@@ -19,6 +21,8 @@ function main(int $numberTemas) {
 	}
 
 	$temas = generateTemas($numberTemas, $protoPrueba);
+
+	echo $twigTemplate->render("prueba.html.twig", array("temp" => "sdfsd", "navigation" => [5, 6]));
 }
 
 function processRawText(string $textFilePath): ProtoPrueba /*throws ParseException*/ {
@@ -106,3 +110,4 @@ function generateTemas(int $numberTemas, ProtoPrueba $protoPrueba): array {
 
 	return $temas;
 }
+

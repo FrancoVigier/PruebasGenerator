@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div>
+        <p style="float: left; padding-left: 20px;"><b>Nombre y Apellido __________________________________________</b></p>
+        <p style="float: right; padding-right: 20px;"><b>IPS. TEMA </b></p>
+        <p style="float: right; padding-right: 100px;"><b>Evaluación {{materia}} - 28/09/2017</b></p>
+        <br><br><br>
+    </div>
+
+    <div class="grid-container">
+        {% set npreg = 1 %}
+        {% for preg in ["fsd?", "DFsd?", "sdfsdfs?"] %}
+            <div class="grid-item">
+                <b><label>{{npreg}})_________ {{preg.devuelveDescripcion()}}</label></b><br>
+                {% set abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N'] %}
+                {% set index = 0 %}
+                {% for resp in ["dfsdf", "fsdfsd", "fsdfsdf", "fddsdfsdfsadfas"] %}
+                    <br><label>{{abc[index]}}) {{resp}}</label>
+                    {% set index = index + 1 %}
+                {% endfor %}
+            </div>
+            {% set npreg = npreg + 1 %}
+        {% endfor %}
+
+    </div>
+</body>
+</html>
