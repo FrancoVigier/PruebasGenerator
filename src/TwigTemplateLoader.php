@@ -12,16 +12,12 @@ class TwigTemplateLoader {
 	private $twig;
 
 	public function __construct() {
-		$this->loader = new Twig_Loader_Filesystem('src/templates');
+		$this->loader = new Twig_Loader_Filesystem($_SERVER['DOCUMENT_ROOT'].'/templates');
 		$this->twig = new Twig_Environment($this->loader);
 	}
 
 	private function load(string $templateName): Twig_TemplateWrapper {
-		try {
-			return $this->twig->load($templateName);
-		} catch (Twig_Error $e) {
-			die("Twig error: ".$e->getTraceAsString());
-		}
+		return $this->twig->load($templateName);
 	}
 
 	public function render(string $templateName, array $params) {
