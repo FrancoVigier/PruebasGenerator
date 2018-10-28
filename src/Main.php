@@ -10,9 +10,18 @@ use League\Pipeline\Pipeline;
 use Symfony\Component\Yaml\Yaml;
 
 class Main {
-	public static function generatePage(int $numberTemas): string {
+	public static function generatePage(array $temas, int $temaIndex, bool $isKey): string {
 		$twigTemplate = new TwigTemplateLoader();
 
+		return $twigTemplate->render("prueba.html.twig",
+			array(
+				"temp" => "sdfsd",
+				"navigation" => [5, 6]
+			)
+		);
+	}
+
+	public static function generatePrueba(int $numberTemas): array {
 		$ymlFile = $_SERVER['DOCUMENT_ROOT'] . "/../raw/preguntas.yml";
 
 		try {
@@ -21,14 +30,7 @@ class Main {
 			die("Error en parseo de yml: " . $exception->getTraceAsString());
 		}
 
-		$temas = Main::generateTemas($numberTemas, $protoPrueba);
-
-		return $twigTemplate->render("prueba.html.twig",
-			array(
-				"temp" => "sdfsd",
-				"navigation" => [5, 6]
-			)
-		);
+		return Main::generateTemas($numberTemas, $protoPrueba);
 	}
 
 	private static function processRawText(string $textFilePath): ProtoPrueba /*throws ParseException*/ {
