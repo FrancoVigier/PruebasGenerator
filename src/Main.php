@@ -15,6 +15,8 @@ class Main {
 
 		return $twigTemplate->render("prueba.html.twig",
 			array(
+				"documentRoot" => $_SERVER['DOCUMENT_ROOT'],
+				"temaLetter" => chr($temaIndex + ord('A')),
 				"temp" => "sdfsd",
 				"navigation" => [5, 6]
 			)

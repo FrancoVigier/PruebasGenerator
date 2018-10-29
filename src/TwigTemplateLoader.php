@@ -16,11 +16,7 @@ class TwigTemplateLoader {
 		$this->twig = new Twig_Environment($this->loader);
 	}
 
-	private function load(string $templateName): Twig_TemplateWrapper {
-		return $this->twig->load($templateName);
-	}
-
 	public function render(string $templateName, array $params) {
-		return $this->load($templateName)->render($params);
+		return $this->twig->load($templateName)->render($params);
 	}
 }

@@ -2,14 +2,13 @@
 <html>
 <meta charset="UTF-8">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="templates/css/style.css">
 </head>
 <body>
-    <div>
-        <p style="float: left; padding-left: 20px;"><b>Nombre y Apellido __________________________________________</b></p>
-        <p style="float: right; padding-right: 20px;"><b>IPS. TEMA </b></p>
-        <p style="float: right; padding-right: 100px;"><b>Evaluación {{materia}} - 28/09/2017</b></p>
-        <br><br><br>
+    <div class="top">
+        <p class="toptext lefttext">Nombre&nbsp;y&nbsp;Apellido: __________________________________________</p>
+        <p class="toptext centertext">IPS. TEMA {{ temaLetter }}</p>
+        <p class="toptext righttext">Evaluación {{ materia }} - 28/09/2017</p>
     </div>
 
     <div class="grid-container">
