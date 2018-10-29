@@ -10,15 +10,19 @@ use League\Pipeline\Pipeline;
 use Symfony\Component\Yaml\Yaml;
 
 class Main {
-	public static function generatePage(array $temas, int $temaIndex, bool $isKey): string {
+	/* @var $temas ProtoPrueba[] */
+	public static function generatePage(string $materia, string $date,
+		array $temas, int $temaIndex, bool $isKey): string {
 		$twigTemplate = new TwigTemplateLoader();
 
 		return $twigTemplate->render("prueba.html.twig",
 			array(
 				"documentRoot" => $_SERVER['DOCUMENT_ROOT'],
+				"materia" => $materia,
+				"date" => $date,
+				"key" => $isKey,
 				"temaLetter" => chr($temaIndex + ord('A')),
-				"temp" => "sdfsd",
-				"navigation" => [5, 6]
+				"preguntas" => $temas[$temaIndex]->PREGUNTAS
 			)
 		);
 	}

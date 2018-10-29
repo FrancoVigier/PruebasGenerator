@@ -7,25 +7,29 @@
 <body>
     <div class="top">
         <p class="toptext lefttext">Nombre&nbsp;y&nbsp;Apellido: __________________________________________</p>
-        <p class="toptext centertext">IPS. TEMA {{ temaLetter }}</p>
-        <p class="toptext righttext">Evaluación {{ materia }} - 28/09/2017</p>
+        <p class="toptext centertext">Instituto Politecnico Superior Gral. San Martin<br />TEMA {{ temaLetter }}</p>
+        <p class="toptext righttext">Evaluación {{ materia }} - {{ date }}</p>
     </div>
 
     <div class="grid-container">
         {% set npreg = 1 %}
-        {% for preg in ["fsd?", "DFsd?", "sdfsdfs?"] %}
+        {% for pregunta in preguntas %}
             <div class="grid-item">
-                <b><label>{{npreg}})_________ {{preg.devuelveDescripcion()}}</label></b><br>
+                <b><label>{{npreg}}){% if key %}K{% else %}______{%  endif %}</label>
+                    <br />
+                    <br />
+                    <label>{{pregunta.PREGUNTA}}</label>
+                </b><br>
+
                 {% set abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N'] %}
                 {% set index = 0 %}
-                {% for resp in ["dfsdf", "fsdfsd", "fsdfsdf", "fddsdfsdfsadfas"] %}
-                    <br><label>{{abc[index]}}) {{resp}}</label>
+                {% for respuesta in pregunta.RESPUESTAS %}
+                    <br><label>{{abc[index]}}) {{respuesta.TEXT}}</label>
                     {% set index = index + 1 %}
                 {% endfor %}
             </div>
             {% set npreg = npreg + 1 %}
         {% endfor %}
-
     </div>
 </body>
 </html>
