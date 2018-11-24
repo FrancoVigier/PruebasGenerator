@@ -39,7 +39,7 @@ class Main {
 		return Main::generateTemas($numberTemas, $protoPrueba);
 	}
 
-	private static function processRawText(string $textFilePath): ProtoPrueba /*throws ParseException*/ {
+	public static function processRawText(string $textFilePath): ProtoPrueba /*throws ParseException*/ {
 		return (new Pipeline)
 			->pipe(function (string $textFilePath) {
 				return Yaml::parseFile($textFilePath);
@@ -58,16 +58,16 @@ class Main {
 			->process($textFilePath);
 	}
 
-	private static function processPregunta(array $pregunta): ProtoPregunta {
+	public static function processPregunta(array $pregunta): ProtoPregunta {
 		return (new Pipeline())
 			->pipe(function ($pregunta) {
-				$hasAllCorrect = !ArrayUtils::checkOrDefault
+				$hasAllCorrect = ArrayUtils::checkOrDefault
 				("ocultar_opcion_todas_las_anteriores", $pregunta, false);
-				$hasNoCorrect = !ArrayUtils::checkOrDefault
+				$hasNoCorrect = ArrayUtils::checkOrDefault
 				("ocultas_opcion_ninguna_de_las_anteriores", $pregunta, false);
-				$hasSpecialAll = !ArrayUtils::checkOrDefault
+				$hasSpecialAll = ArrayUtils::checkOrDefault
 				("texto_todas_las_anteriores", $pregunta, NULL);
-				$hasSpecialNoCorrect = !ArrayUtils::checkOrDefault
+				$hasSpecialNoCorrect = ArrayUtils::checkOrDefault
 				("texto_ninguna_de_las_anteriores", $pregunta, NULL);
 
 				return new ProtoPregunta(
@@ -82,7 +82,7 @@ class Main {
 			->process($pregunta);
 	}
 
-	private static function processRespuestas(array $correctRespuestasRaw,
+	public static function processRespuestas(array $correctRespuestasRaw,
 		array $wrongRespuestasRaw): array {
 		return (new Pipeline())
 			->pipe(function ($respuestas) {
@@ -104,7 +104,7 @@ class Main {
 			->process(array($correctRespuestasRaw, $wrongRespuestasRaw));
 	}
 
-	private static function generateTemas(int $numberTemas, ProtoPrueba $protoPrueba): array {
+	public static function generateTemas(int $numberTemas, ProtoPrueba $protoPrueba): array {
 		$temas = [];
 
 		for ($i = 0; $i < $numberTemas; $i++) {

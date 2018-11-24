@@ -1,0 +1,18 @@
+preguntas:
+
+  - descripcion: El término pixel hace referencia a
+    respuestas_correctas:
+      - La unidad mínima de información de una imagen.
+    respuestas_incorrectas:
+      - La longitud de la diagonal de una imagen en pulgadas.
+      - La cantidad de puntos por pulgada.
+      - La cantidad de colores de un punto.
+    ocultar_opcion_todas_las_anteriores: true
+
+  - descripcion: Para las imágenes vectoriales se cumple que
+    respuestas_correctas: []
+    respuestas_incorrectas:
+      - Poseen un número fijo de píxeles.
+      - Son creadas por los escaners y las cámaras digitales.
+      - Pueden perder detalle y verse pixeladas cuando se amplían.
+      - A cada píxel se le asigna una ubicación y un valor de color específico.
