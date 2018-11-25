@@ -13,12 +13,15 @@ use Symfony\Component\Yaml\Yaml;
 class Main {
 	/* @var $temas FinalPrueba[] */
 	public static function generatePage(string $materia, string $date,
-		array $temas, int $temaIndex, bool $isKey): string {
+		array $temas, int $temaIndex, bool $isKey, bool $showHeader): string {
 		$twigTemplate = new TwigTemplateLoader();
 
 		return $twigTemplate->render("prueba.html.twig",
 			array(
 				"documentRoot" => $_SERVER['DOCUMENT_ROOT'],
+				"showHeader" => $showHeader,
+				"showBackButton" => $temaIndex != 0,
+				"showFowardButton" => $temaIndex != count($temas)-1,
 				"materia" => $materia,
 				"date" => $date,
 				"key" => $isKey,

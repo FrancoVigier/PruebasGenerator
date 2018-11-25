@@ -2,9 +2,35 @@
 <html>
 <meta charset="UTF-8">
 <head>
+    <script src="templates/clickhandler.js"></script>
     <link rel="stylesheet" type="text/css" href="templates/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+    {% if showHeader %}
+        <div class="topheader">
+            <div class="contentheader lefttext">
+                {% if showBackButton %}
+                    <button type="button" class="btn btn-secondary" onclick="onBackClick()">Anterior</button>
+                {% endif %}
+            </div>
+
+            <div class="contentheader centertext">
+                <button type="button" class="btn btn-primary" onclick="onDownloadClick()">Descargar</button>
+            </div>
+            <div class="contentheader righttext">
+                {% if showFowardButton %}
+                <button type="button" class="btn btn-secondary" onclick="onFowardClick()">Siguiente</button>
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+        <script>window.print();</script>
+    {% endif %}
+
     <div class="top">
         <p class="toptext lefttext">Nombre&nbsp;y&nbsp;Apellido: __________________________________________</p>
         <p class="toptext centertext">Instituto Politecnico Superior Gral. San Martin<br />TEMA {{ temaLetter }} {% if key %} - VERSION RESUELTA {% endif %}</p>
@@ -15,7 +41,6 @@
         {% for pregunta in prueba.PREGUNTAS %}
             <div class="grid-item">
                 <b><label>{{pregunta.NUMBER}}){% if key %}__<span class="underline">{{ pregunta.CORRECT_LETTERS }}</span>__{% else %}______{%  endif %}</label>
-                    <br />
                     <br />
                     <label>{{pregunta.TEXT}}</label>
                 </b><br>

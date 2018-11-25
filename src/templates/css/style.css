@@ -1,3 +1,17 @@
+.topheader {
+    padding: 1vh 5vw;
+    background-color: cornsilk;
+
+    width: available;
+
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+.contentheader {
+    flex: 1;
+}
+
 .top {
     width: available;
     height: 10vh;
