@@ -18,7 +18,7 @@ class ProtoPreguntaTest extends TestCase {
 
 		$protopregunta = new ProtoPregunta($pregunta, $respuestas, $hasAllCorrect, $hasNoCorrect, $hasSpecialAll, $hasSpecialNoCorrect, false, false);
 
-		$this->assertEquals($pregunta, $protopregunta->pregunta());
-		$this->assertEquals($respuestas, $protopregunta->respuesta());
+		$this->assertEquals($pregunta, $protopregunta->PREGUNTA);
+		$this->assertEquals($respuestas, $protopregunta->RESPUESTAS);
 	}
 }

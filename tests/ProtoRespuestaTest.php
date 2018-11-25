@@ -11,7 +11,7 @@ class ProtoRespuestaTest extends TestCase {
 		$escorrecta = False;
 
 		$protorespuesta = new ProtoRespuesta ($texto, $escorrecta);
-		$this->assertEquals($texto, $protorespuesta->texto());
+		$this->assertEquals($texto, $protorespuesta->TEXT);
 	}
 
 	public function testEscorrecta() {
@@ -19,6 +19,6 @@ class ProtoRespuestaTest extends TestCase {
 		$escorrecta = False;
 
 		$protorespuesta = new ProtoRespuesta ($texto, $escorrecta);
-		$this->assertEquals($escorrecta, $protorespuesta->escorrecta());
+		$this->assertEquals($escorrecta, $protorespuesta->IS_CORRECT);
 	}
 }

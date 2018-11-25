@@ -14,9 +14,4 @@ class ProtoPrueba {
 			return clone $elem;
 		}, $this->PREGUNTAS);
 	}
-	
-	public function pregunta() {
-		return $this->PREGUNTAS;
-	
-	}
 }

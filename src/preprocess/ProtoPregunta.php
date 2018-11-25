@@ -31,15 +31,4 @@ class ProtoPregunta {
 			return clone $elem;
 		}, $this->RESPUESTAS);
 	}
-	
-	public function pregunta() {
-		return $this->PREGUNTA;
-	
-	}
-	public function respuesta() {
-		return $this->RESPUESTAS;
-	
-	}
-	
-	
 }

@@ -10,12 +10,4 @@ class ProtoRespuesta {
 		$this->TEXT = $text;
 		$this->IS_CORRECT = $isCorrect;
 	}
-	
-	public function texto(){
-		return $this->TEXT;
-	}
-	
-	public function escorrecta(){
-		return $this->IS_CORRECT;
-	}
 }
