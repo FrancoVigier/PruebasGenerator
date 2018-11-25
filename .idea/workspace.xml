@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fdede05-130f-4f54-858c-8de3443768c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ParseFinal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final/FinalPregunta.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final/FinalPrueba.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final/FinalRespuesta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PruebasGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PruebasGenerator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/prueba.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/prueba.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ArrayUtilsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArrayUtilsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/MainTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MainTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ProtoPreguntaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProtoPreguntaTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ProtoPruebaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProtoPruebaTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ProtoRespuestaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProtoRespuestaTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Tests.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,9 +42,9 @@
           <entry key="ini" value="1" />
           <entry key="json" value="13" />
           <entry key="lock" value="3" />
-          <entry key="php" value="89" />
+          <entry key="php" value="99" />
           <entry key="twig" value="8" />
-          <entry key="yml" value="7" />
+          <entry key="yml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -59,9 +53,9 @@
           <entry key="HTML" value="1" />
           <entry key="Ini" value="1" />
           <entry key="JSON" value="16" />
-          <entry key="PHP" value="89" />
+          <entry key="PHP" value="99" />
           <entry key="Twig" value="8" />
-          <entry key="YAML" value="7" />
+          <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -70,7 +64,7 @@
           <entry key="dummy" value="1" />
           <entry key="html" value="10" />
           <entry key="json" value="101" />
-          <entry key="php" value="7628" />
+          <entry key="php" value="7638" />
           <entry key="twig" value="631" />
         </counts>
       </usages-collector>
@@ -79,7 +73,7 @@
           <entry key="CSS" value="245" />
           <entry key="HTML" value="10" />
           <entry key="JSON" value="101" />
-          <entry key="PHP" value="7628" />
+          <entry key="PHP" value="7638" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Twig" value="631" />
         </counts>
@@ -108,50 +102,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/prueba.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.php">
+        <entry file="file://$PROJECT_DIR$/tests/ArrayUtilsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-              <folding>
-                <element signature="e#36#82#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TwigTemplateLoader.php">
+        <entry file="file://$PROJECT_DIR$/tests/MainTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            <state relative-caret-position="381">
+              <caret line="175" column="58" selection-start-line="175" selection-start-column="58" selection-end-line="175" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/ProtoPreguntaTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/ProtoPruebaTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/ProtoRespuestaTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -193,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/final/FinalPair.php" />
         <option value="$PROJECT_DIR$/src/final/FinalPrueba.php" />
         <option value="$PROJECT_DIR$/src/templates/css/style.css" />
-        <option value="$PROJECT_DIR$/tests/Tests.php" />
         <option value="$PROJECT_DIR$/src/index.php" />
         <option value="$PROJECT_DIR$/src/final/FinalRespuesta.php" />
         <option value="$PROJECT_DIR$/src/final/FinalPregunta.php" />
@@ -201,6 +191,12 @@
         <option value="$PROJECT_DIR$/src/ParseFinal.php" />
         <option value="$PROJECT_DIR$/src/templates/prueba.html.twig" />
         <option value="$PROJECT_DIR$/src/Main.php" />
+        <option value="$PROJECT_DIR$/tests/ProtoPreguntaTest.php" />
+        <option value="$PROJECT_DIR$/tests/Tests.php" />
+        <option value="$PROJECT_DIR$/tests/ProtoRespuestaTest.php" />
+        <option value="$PROJECT_DIR$/tests/ArrayUtilsTest.php" />
+        <option value="$PROJECT_DIR$/tests/MainTest.php" />
+        <option value="$PROJECT_DIR$/tests/ProtoPruebaTest.php" />
       </list>
     </option>
   </component>
@@ -260,7 +256,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1359" />
+    <option name="x" value="-1361" />
     <option name="y" value="-11" />
     <option name="width" value="1362" />
     <option name="height" value="780" />
@@ -416,7 +412,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59308000" />
+    <option name="totallyTimeSpent" value="59684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1361" y="-11" width="1362" height="780" extended-state="6" />
@@ -432,12 +428,12 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32935917" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.41132638" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.41132638" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39940387" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="12" sideWeight="0.49926472" visible="true" weight="0.32935917" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" sideWeight="0.49926472" weight="0.32935917" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -584,16 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Tests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -643,16 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParseFinal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="e#36#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocess/ProtoPregunta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
@@ -681,13 +657,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParseFinal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+          <folding>
+            <element signature="e#36#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="485">
+          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
           <folding>
             <element signature="e#36#82#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/preguntas.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ProtoRespuestaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ProtoPruebaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ProtoPreguntaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/MainTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="175" column="58" selection-start-line="175" selection-start-column="58" selection-end-line="175" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ArrayUtilsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
