@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fdede05-130f-4f54-858c-8de3443768c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tests/ArrayUtilsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArrayUtilsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/MainTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MainTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ProtoPreguntaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProtoPreguntaTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ProtoPruebaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProtoPruebaTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ProtoRespuestaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProtoRespuestaTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Tests.php" afterDir="false" />
-    </list>
+    <list default="true" id="2fdede05-130f-4f54-858c-8de3443768c2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +16,7 @@
     <session id="1377467728">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.29" value="1" />
@@ -102,7 +95,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/ArrayUtilsTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -111,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/MainTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="2520">
               <caret line="175" column="58" selection-start-line="175" selection-start-column="58" selection-end-line="175" selection-end-column="58" />
             </state>
           </provider>
@@ -311,23 +304,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.MainTest">
-    <configuration name="ArrayUtilsTest.testCheckordefault" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="PruebasGenerator\ArrayUtilsTest" file="$PROJECT_DIR$/tests/ArrayUtilsTest.php" method="testCheckordefault" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.ProtoRespuestaTest">
+    <configuration name="ArrayUtilsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="PruebasGenerator\ArrayUtilsTest" file="$PROJECT_DIR$/tests/ArrayUtilsTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="MainTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="PruebasGenerator\MainTest" file="$PROJECT_DIR$/tests/MainTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests" file="$PROJECT_DIR$/tests/Tests.php" scope="Class" />
+    <configuration name="ProtoPreguntaTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="PruebasGenerator\Preprocess\ProtoPreguntaTest" file="$PROJECT_DIR$/tests/ProtoPreguntaTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="Tests.testMain" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine workingDirectory="$PROJECT_DIR$" />
-      <TestRunner class="Tests" file="$PROJECT_DIR$/tests/Tests.php" method="testMain" scope="Method" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
+    <configuration name="ProtoPruebaTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="PruebasGenerator\Preprocess\ProtoPruebaTest" file="$PROJECT_DIR$/tests/ProtoPruebaTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProtoRespuestaTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="PruebasGenerator\Preprocess\ProtoRespuestaTest" file="$PROJECT_DIR$/tests/ProtoRespuestaTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="Main" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/src/Main.php" scriptParameters="--enable-fastcgi -r 'Main::main();'">
@@ -335,17 +330,19 @@
     </configuration>
     <list>
       <item itemvalue="PHP Script.Main" />
-      <item itemvalue="PHPUnit.Tests" />
-      <item itemvalue="PHPUnit.Tests.testMain" />
-      <item itemvalue="PHPUnit.ArrayUtilsTest.testCheckordefault" />
       <item itemvalue="PHPUnit.MainTest" />
+      <item itemvalue="PHPUnit.ArrayUtilsTest" />
+      <item itemvalue="PHPUnit.ProtoPreguntaTest" />
+      <item itemvalue="PHPUnit.ProtoPruebaTest" />
+      <item itemvalue="PHPUnit.ProtoRespuestaTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ProtoRespuestaTest" />
+        <item itemvalue="PHPUnit.ProtoPruebaTest" />
+        <item itemvalue="PHPUnit.ProtoPreguntaTest" />
+        <item itemvalue="PHPUnit.ArrayUtilsTest" />
         <item itemvalue="PHPUnit.MainTest" />
-        <item itemvalue="PHPUnit.ArrayUtilsTest.testCheckordefault" />
-        <item itemvalue="PHPUnit.Tests.testMain" />
-        <item itemvalue="PHPUnit.Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -380,21 +377,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_testMain - 2018.10.29 at 00h 48m 28s.xml">
-      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_testMain - 2018.11.25 at 01h 36m 58s.xml">
-      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_testMain - 2018.11.25 at 01h 40m 33s.xml">
-      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_testMain - 2018.11.25 at 03h 15m 50s.xml">
-      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_testMain - 2018.11.25 at 03h 16m 59s.xml">
-      <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="Tests_testMain - 2018.11.25 at 03h 17m 42s.xml">
       <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -410,16 +392,31 @@
     <history-entry file="Tests_testMain - 2018.11.25 at 03h 31m 06s.xml">
       <configuration name="Tests.testMain" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="ArrayUtilsTest_testCheckordefault - 2018.11.25 at 19h 18m 38s.xml">
+      <configuration name="ArrayUtilsTest.testCheckordefault" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.11.25 at 19h 18m 42s.xml">
+      <configuration name="MainTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.11.25 at 19h 18m 56s.xml">
+      <configuration name="MainTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.11.25 at 19h 22m 26s.xml">
+      <configuration name="MainTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.11.25 at 19h 22m 30s.xml">
+      <configuration name="MainTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59684000" />
+    <option name="totallyTimeSpent" value="59728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1361" y="-11" width="1362" height="780" extended-state="6" />
+    <frame x="-1" y="-11" width="1362" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50222224" side_tool="true" weight="0.15367647" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4977778" visible="true" weight="0.15367647" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4977778" visible="true" weight="0.15367647" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49926472" weight="0.32935917" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -428,7 +425,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32935917" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.41132638" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" weight="0.41132638" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39940387" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -711,17 +708,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/MainTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="175" column="58" selection-start-line="175" selection-start-column="58" selection-end-line="175" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ArrayUtilsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/MainTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="175" column="58" selection-start-line="175" selection-start-column="58" selection-end-line="175" selection-end-column="58" />
         </state>
       </provider>
     </entry>
