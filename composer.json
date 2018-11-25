@@ -11,7 +11,8 @@
     "autoload": {
         "psr-4": {
             "PruebasGenerator\\": "src/",
-            "PruebasGenerator\\Preprocess\\": "src/preprocess/"
+            "PruebasGenerator\\Preprocess\\": "src/preprocess/",
+            "PruebasGenerator\\Process\\": "src/final/"
         }
     }
 }
