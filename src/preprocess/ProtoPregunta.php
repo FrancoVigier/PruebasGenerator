@@ -14,7 +14,7 @@ class ProtoPregunta {
 
 	public function __construct(
 			string $pregunta, array $respuestas, bool $hasAllCorrect,
-			bool $hasNoCorrect, string $hasSpecialAll, string $hasSpecialNoCorrect,
+			bool $hasNoCorrect, $hasSpecialAll, $hasSpecialNoCorrect,
 			bool $isAllCorrect, bool $isNoCorrect) {
 		$this->PREGUNTA = $pregunta;
 		$this->RESPUESTAS = $respuestas;
