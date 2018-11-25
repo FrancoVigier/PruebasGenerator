@@ -65,9 +65,9 @@ class Main {
 				("ocultar_opcion_todas_las_anteriores", $pregunta, false);
 				$hasNoCorrect = !ArrayUtils::checkOrDefault
 				("ocultas_opcion_ninguna_de_las_anteriores", $pregunta, false);
-				$hasSpecialAll = !ArrayUtils::checkOrDefault
+				$hasSpecialAll = ArrayUtils::checkOrDefault
 				("texto_todas_las_anteriores", $pregunta, NULL);
-				$hasSpecialNoCorrect = !ArrayUtils::checkOrDefault
+				$hasSpecialNoCorrect = ArrayUtils::checkOrDefault
 				("texto_ninguna_de_las_anteriores", $pregunta, NULL);
 				$isAllCorrect = $pregunta["respuestas_incorrectas"] == [];
 				$isNoCorrect = $pregunta["respuestas_correctas"] == [];
