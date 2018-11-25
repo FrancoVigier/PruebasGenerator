@@ -69,6 +69,8 @@ class Main {
 				("texto_todas_las_anteriores", $pregunta, NULL);
 				$hasSpecialNoCorrect = ArrayUtils::checkOrDefault
 				("texto_ninguna_de_las_anteriores", $pregunta, NULL);
+				$isAllCorrect = $pregunta["respuestas_incorrectas"] == [];
+				$isNoCorrect = $pregunta["respuestas_correctas"] == [];
 
 				return new ProtoPregunta(
 					$pregunta["descripcion"],
@@ -76,7 +78,9 @@ class Main {
 					$hasAllCorrect,
 					$hasNoCorrect,
 					$hasSpecialAll,
-					$hasSpecialNoCorrect
+					$hasSpecialNoCorrect,
+					$isAllCorrect,
+					$isNoCorrect
 				);
 			})
 			->process($pregunta);
