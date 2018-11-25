@@ -40,3 +40,7 @@
     padding: 10px 5px 5px;
     height: max-content;
 }
+
+.underline {
+    text-decoration: underline;
+}

@@ -9,4 +9,4 @@ require_once __DIR__ . '/../vendor/autoload.php';
  * from a browser.
  */
 $prueba = Main::generatePrueba(4);
-echo Main::generatePage("Dagos", "1970-00-00", $prueba, 1, false);
+echo Main::generatePage("Dagos", "1970-00-00", $prueba, 1, true);

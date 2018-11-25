@@ -5,12 +5,13 @@ namespace PruebasGenerator;
 use PruebasGenerator\Preprocess\ProtoPregunta;
 use PruebasGenerator\Preprocess\ProtoPrueba;
 use PruebasGenerator\Preprocess\ProtoRespuesta;
+use PruebasGenerator\Process\FinalPrueba;
 use Symfony\Component\Yaml\Exception\ParseException;
 use League\Pipeline\Pipeline;
 use Symfony\Component\Yaml\Yaml;
 
 class Main {
-	/* @var $temas ProtoPrueba[] */
+	/* @var $temas FinalPrueba[] */
 	public static function generatePage(string $materia, string $date,
 		array $temas, int $temaIndex, bool $isKey): string {
 		$twigTemplate = new TwigTemplateLoader();
@@ -22,11 +23,12 @@ class Main {
 				"date" => $date,
 				"key" => $isKey,
 				"temaLetter" => chr($temaIndex + ord('A')),
-				"preguntas" => $temas[$temaIndex]->PREGUNTAS
+				"prueba" => $temas[$temaIndex]
 			)
 		);
 	}
 
+	/* @return FinalPrueba[] */
 	public static function generatePrueba(int $numberTemas): array {
 		$ymlFile = $_SERVER['DOCUMENT_ROOT'] . "/../raw/preguntas.yml";
 
@@ -36,7 +38,7 @@ class Main {
 			die("Error en parseo de yml: " . $exception->getTraceAsString());
 		}
 
-		return Main::generateTemas($numberTemas, $protoPrueba);
+		return ParseFinal::generatePruebaFinal($numberTemas, $protoPrueba);
 	}
 
 	private static function processRawText(string $textFilePath): ProtoPrueba /*throws ParseException*/ {
@@ -107,27 +109,4 @@ class Main {
 			})
 			->process(array($correctRespuestasRaw, $wrongRespuestasRaw));
 	}
-
-	private static function generateTemas(int $numberTemas, ProtoPrueba $protoPrueba): array {
-		$temas = [];
-
-		for ($i = 0; $i < $numberTemas; $i++) {
-			$temas[] = (new Pipeline)
-				->pipe(function (ProtoPrueba $protoPrueba) {
-					shuffle($protoPrueba->PREGUNTAS);
-					return $protoPrueba;
-				})
-				->pipe(function (ProtoPrueba $protoPrueba) {
-					/* @var $pregunta ProtoPregunta */
-					foreach ($protoPrueba->PREGUNTAS as $pregunta) {
-						shuffle($pregunta->RESPUESTAS);
-					}
-					return $protoPrueba;
-				})
-				->process(clone $protoPrueba);
-		}
-
-		return $temas;
-	}
-
 }
